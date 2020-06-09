@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - 10.16
+install:
+  - npm install
+jobs:
+  include:
+    - stage: test
+      script: 
+        - npm run lint
+        - npm run test
+        - npm preversion
+    - stage: master
+      if: branch = master
+      script:
+        - npm run lint
+        - npm run test
+        - npm preversion
+        - npm run coveralls
+
+  
