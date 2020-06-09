@@ -33,6 +33,6 @@ npx imports-sanitize -p ./src
 
 ### Supported packages
 
-✅ lodash
-✅ lodash-es
-⬜ rxjs (in-progress)
+- ✅ lodash
+- ✅ lodash-es
+- ⬜ rxjs (WIP)
