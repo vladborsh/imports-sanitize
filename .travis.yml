@@ -12,7 +12,8 @@ jobs:
     - stage: master
       if: branch = master
       script:
-        - npm run version
+        - npm run test
         - npm run coveralls
+        - npm run version
 
   
