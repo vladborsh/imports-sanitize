@@ -1,6 +1,7 @@
 # Imports-sanitize
 
 [![Build Status](https://travis-ci.com/vladborsh/imports-sanitize.svg?branch=master)](https://travis-ci.com/vladborsh/imports-sanitize)
+[![Coverage Status](https://coveralls.io/repos/github/vladborsh/imports-sanitize/badge.svg?branch=master)](https://coveralls.io/github/vladborsh/imports-sanitize?branch=master)
 
 ### Purposes
 
