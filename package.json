@@ -20,7 +20,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "version": "standard-version"
   },
-  "author": "“Vlad <“v.borsh.io@gmail.com”>",
+  "author": "“Vlad Borsh <“v.borsh.io@gmail.com”>",
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "~3.5.10",
