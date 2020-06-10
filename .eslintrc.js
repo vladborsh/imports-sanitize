@@ -17,7 +17,7 @@ module.exports = {
         "@typescript-eslint",
         "@typescript-eslint/tslint"
     ],
-    "ignorePatterns": ["*.spec.ts"],
+    "ignorePatterns": ["*.spec.ts", "*.js"],
     "rules": {
         "@typescript-eslint/array-type": "off",
         "@typescript-eslint/consistent-type-definitions": "error",
