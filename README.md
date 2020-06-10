@@ -5,7 +5,7 @@
 
 ### Purposes
 
-Fix non-tree-shakable imports for well known packages
+With current Fix non-tree-shakable imports for well known packages (lodash for ex.)
 
 Source code before:
 ```typescript

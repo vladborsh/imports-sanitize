@@ -7,6 +7,22 @@
   "files": [
     "dist/"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladborsh/imports-sanitize"
+  },
+  "keywords": [
+    "lodash",
+    "lodash-es",
+    "lodash-imports",
+    "imports",
+    "import",
+    "imports-fix",
+    "tree-shaking",
+    "tree-shakable",
+    "tree-shakable-imports",
+    "tree-shakable-lodash"
+  ],
   "scripts": {
     "test": "karma start",
     "lint": "npx eslint -c .eslintrc.js 'src/**/*.ts' --fix",
