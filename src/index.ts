@@ -8,6 +8,8 @@ import { REGEXP_LODASH_IMPORT, sanitizeImports } from './lib/sanitize-imports';
 const PATH_ALIAS = '-p';
 const EXTENSIONS = ['ts', 'tsx', 'js', 'jsx'];
 
+let isAnyAffectedFile = false;
+
 function processFile(file: string) {
     readFile(file, 'utf8', (err, data) => {
         if (err) {
@@ -15,6 +17,11 @@ function processFile(file: string) {
         }
 
         if (REGEXP_LODASH_IMPORT.test(data)) {
+            if (!isAnyAffectedFile) {
+                console.log('Fixed files:');
+                isAnyAffectedFile = true;
+            }
+            console.log(file);
             writeFileSync(file, sanitizeImports(data));
         }
     });
