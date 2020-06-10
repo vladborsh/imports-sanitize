@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/vladborsh/imports-sanitize/compare/v0.0.4...v0.0.5) (2020-06-10)
+
+
+### Features
+
+* **main:** log to console affected files ([78e7d78](https://github.com/vladborsh/imports-sanitize/commit/78e7d786159cab8d0c008e66a3b9ab34092e87e6))
+
 ### [0.0.4](https://github.com/vladborsh/imports-sanitize/compare/v0.0.3...v0.0.4) (2020-06-10)
 
 ### [0.0.3](https://github.com/vladborsh/imports-sanitize/compare/v0.0.2...v0.0.3) (2020-06-10)
