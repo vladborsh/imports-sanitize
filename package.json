@@ -1,6 +1,6 @@
 {
   "name": "imports-sanitize",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/src/index.js",
   "bin": "./dist/src/index.js",
