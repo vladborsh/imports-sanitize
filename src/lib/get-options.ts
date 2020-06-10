@@ -1,7 +1,7 @@
-export function getOptions() {
-    return process.argv.reduce((opt, key, i) => {
+export function getOptions(argv: string[]): Record<string, string> {
+    return argv.reduce((opt, key, i) => {
         if (i % 2) {
-            opt[process.argv[i - 1]] = key;
+            opt[argv[i - 1]] = key;
         } else {
             opt[key] = undefined;
         }

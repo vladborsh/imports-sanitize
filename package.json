@@ -11,7 +11,7 @@
     "test": "karma start",
     "lint": "npx eslint -c .eslintrc.js 'src/**/*.ts' --fix",
     "commit": "git-cz",
-    "coveralls": "cat coverage/lcov.info | coveralls",
+    "coveralls": "cat coverage/lcov.dat | coveralls",
     "prettier": "prettier --config .prettierrc.json --write src/**/*.ts",
     "clean": "rmdir dist /S /Q",
     "build": "tsc --p ./ --sourceMap false",

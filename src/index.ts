@@ -28,7 +28,7 @@ function processFile(file: string) {
 }
 
 createHound()
-    .paths(getOptions()[PATH_ALIAS])
+    .paths(getOptions(process.argv)[PATH_ALIAS])
     .ext(EXTENSIONS)
     .find()
     .then((files: string[]) => files.forEach(processFile));
