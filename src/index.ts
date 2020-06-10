@@ -3,7 +3,7 @@
 import { writeFileSync, readFile, } from 'fs';
 import { create as createHound } from 'filehound';
 import { getOptions } from './lib/get-options';
-import { REGEXP_LODASH_IMPORT, sanitizeImports } from './lib/sanitize-imports';
+import { REGEXP_LODASH_IMPORT, sanitizeImports, REGEXP_LODASH_ES_IMPORT } from './lib/sanitize-imports';
 
 const PATH_ALIAS = '-p';
 const EXTENSIONS = ['ts', 'tsx', 'js', 'jsx'];
@@ -16,7 +16,7 @@ function processFile(file: string) {
             throw Error(err.message);
         }
 
-        if (REGEXP_LODASH_IMPORT.test(data)) {
+        if (REGEXP_LODASH_IMPORT.test(data) || REGEXP_LODASH_ES_IMPORT.test(data)) {
             if (!isAnyAffectedFile) {
                 console.log('Fixed files:');
                 isAnyAffectedFile = true;
