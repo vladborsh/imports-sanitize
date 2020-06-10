@@ -1,5 +1,7 @@
 # Imports-sanitize
 
+[![Build Status](https://travis-ci.com/vladborsh/imports-sanitize.svg?branch=master)](https://travis-ci.com/vladborsh/imports-sanitize)
+
 ### Purposes
 
 Fix non-tree-shakable imports for well known packages

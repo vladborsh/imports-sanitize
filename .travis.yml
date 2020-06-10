@@ -9,12 +9,9 @@ jobs:
       script: 
         - npm run lint
         - npm run test
-        - npm preversion
     - stage: master
       if: branch = master
       script:
-        - npm run lint
-        - npm run test
         - npm run version
         - npm run coveralls
 
