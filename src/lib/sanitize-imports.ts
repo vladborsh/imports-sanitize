@@ -1,5 +1,5 @@
-export const REGEXP_LODASH_IMPORT = /import.+'lodash';\n/gi;
-export const REGEXP_LODASH_ES_IMPORT = /import.+'lodash-es';\n/gi;
+export const REGEXP_LODASH_IMPORT = /import.+'lodash';[\r\n]/gi;
+export const REGEXP_LODASH_ES_IMPORT = /import.+'lodash-es';[\r\n]/gi;
 
 export function sanitizeImports(source: string): string {
     const importedLodashModuleList = [
@@ -31,7 +31,7 @@ export function sanitizeImports(source: string): string {
             /^/,
             fnList.length
                 ? fnList
-                    .map((fn) => `import ${fn} from 'lodash/${fn}';\n`)
+                    .map((fn, i) => `import ${fn} from 'lodash/${fn}';\n`)
                     .join('')
                 : ''
         )
