@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/vladborsh/imports-sanitize/compare/v1.0.1...v1.0.2) (2020-06-17)
+
+
+### Bug Fixes
+
+* windows compatible regexp ([d742c83](https://github.com/vladborsh/imports-sanitize/commit/d742c83591e63b44ebb6b0993db4b78b1f611dd3))
+
 ### [1.0.1](https://github.com/vladborsh/imports-sanitize/compare/v1.0.0...v1.0.1) (2020-06-10)
 
 ## [1.0.0](https://github.com/vladborsh/imports-sanitize/compare/v0.0.7...v1.0.0) (2020-06-10)
