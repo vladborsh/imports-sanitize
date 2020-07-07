@@ -5,7 +5,7 @@
 
 ### Purposes
 
-With current Fix non-tree-shakable imports for well known packages (lodash for ex.)
+Fix your imports from lodash in source code to [tree-shakable](https://medium.com/@martin_hotell/tree-shake-lodash-with-webpack-jest-and-typescript-2734fa13b5cd) alternative
 
 Source code before:
 ```typescript
@@ -30,6 +30,8 @@ let j = isArray('');
 
 ### How to use
 
+Just run single command in your project terminal. `-p` parameter is a your source code folder path
+
 ```bash
 npx imports-sanitize -p ./src
 ```
@@ -38,4 +40,3 @@ npx imports-sanitize -p ./src
 
 - ✅ lodash
 - ✅ lodash-es
-- ⬜ rxjs (WIP)
